@@ -15,6 +15,7 @@ var HeroFormComponent = (function () {
         this.powers = ['Really Smart', 'Super Flexible', 'Super Hot', 'Weather Changer'];
         this.model = new newHero_1.Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
         this.submitted = false;
+        this.active = true;
     }
     HeroFormComponent.prototype.onSubmit = function () {
         this.submitted = true;

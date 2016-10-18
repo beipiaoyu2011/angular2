@@ -1,10 +1,10 @@
 "use strict";
 var Hero = (function () {
-    function Hero(id, name, power, alertEgo) {
+    function Hero(id, name, power, alterEgo) {
         this.id = id;
         this.name = name;
         this.power = power;
-        this.alertEgo = alertEgo;
+        this.alterEgo = alterEgo;
     }
     return Hero;
 }());
