@@ -10,23 +10,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var click_me_component_1 = require('./click-me.component');
 var keyup_component_1 = require('./keyup.component');
 var loop_back_component_1 = require('./loop-back.component');
+var litter_tour_component_1 = require('./litter-tour.component');
+var hero_form_component_1 = require('./hero-form.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
             declarations: [
                 app_component_1.AppComponent,
                 click_me_component_1.ClickMeComponent,
                 keyup_component_1.KeyUpComponent_v1,
                 keyup_component_1.KeyUpComponent_v2,
                 keyup_component_1.KeyUpComponent_v3,
-                loop_back_component_1.LoopbackComponent
+                keyup_component_1.KeyUpComponent_v4,
+                loop_back_component_1.LoopbackComponent,
+                litter_tour_component_1.LitterTourComponent,
+                hero_form_component_1.HeroFormComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

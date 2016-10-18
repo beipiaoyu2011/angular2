@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var LitterTourComponent = (function () {
+    function LitterTourComponent() {
+        this.heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
     }
-    AppComponent = __decorate([
+    LitterTourComponent.prototype.addHero = function (newHero) {
+        if (newHero) {
+            this.heroes.push(newHero);
+        }
+    };
+    LitterTourComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
-            selector: 'my-app',
-            template: '<hero-form></hero-form>'
+            selector: 'little-tour',
+            template: "\n    <input #newHero (keyup.enter)=\"addHero(newHero.value)\" (blur)=\"addHero(newHero.value);newHero.value=''\">\n    <button (click)=\"addHero(newHero.value)\">add</button>\n    <ul>\n      <li *ngFor=\"let hero  of heroes\">{{hero}}</li>\n    </ul>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LitterTourComponent);
+    return LitterTourComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.LitterTourComponent = LitterTourComponent;

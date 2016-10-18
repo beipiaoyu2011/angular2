@@ -60,3 +60,18 @@ var KeyUpComponent_v3 = (function () {
     return KeyUpComponent_v3;
 }());
 exports.KeyUpComponent_v3 = KeyUpComponent_v3;
+////////////////////////////////
+var KeyUpComponent_v4 = (function () {
+    function KeyUpComponent_v4() {
+        this.values = '';
+    }
+    KeyUpComponent_v4 = __decorate([
+        core_1.Component({
+            selector: 'key-up4',
+            template: "\n    <input #box (keyup.enter)=\"values=box.value\" (blur)=\"values=box.value\">\n    <p>{{values}}</p>\n  "
+        }), 
+        __metadata('design:paramtypes', [])
+    ], KeyUpComponent_v4);
+    return KeyUpComponent_v4;
+}());
+exports.KeyUpComponent_v4 = KeyUpComponent_v4;
