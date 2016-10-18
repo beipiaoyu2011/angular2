@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 import { ClickMeComponent }  from './click-me.component';
-
+import {
+  KeyUpComponent_v1,
+  KeyUpComponent_v2,
+  KeyUpComponent_v3
+} from './keyup.component';
+import { LoopbackComponent } from './loop-back.component';
 
 @NgModule({
-  imports: [ BrowserModule ],
-  declarations: [
-      AppComponent,
-      ClickMeComponent
-  ],
-  bootstrap: [ AppComponent ]
+    imports: [BrowserModule],
+    declarations: [
+        AppComponent,
+        ClickMeComponent,
+        KeyUpComponent_v1,
+        KeyUpComponent_v2,
+        KeyUpComponent_v3,
+        LoopbackComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,3 +7,4 @@ var Hero = (function () {
     return Hero;
 }());
 exports.Hero = Hero;
+;
